@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Daraz.pk: Online Shopping Pakistan</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -42,9 +43,13 @@
       <img src="images/banner.png" alt="Daraz Mega Shopping Festival Deals" class="promo-banner">
     </section>
 
- 
     <section>
       <h2 class="section-title">Featured Products & Flash Deals</h2>
+
+      <div class="task3-controls" style="display: flex; gap: 10px; margin-bottom: 20px; align-items: center;">
+        <input type="text" id="live-search" class="search-input" placeholder="Search by name..." style="max-width: 300px;">
+        <button type="button" id="sort-price-btn" class="btn btn-primary" style="background-color: hsl(25, 70%, 45%); border-color: hsl(25, 70%, 45%);">Sort by Price</button>
+      </div>
 
       <input type="radio" id="cat-all" name="category-filter" class="filter-radio" checked>
       <input type="radio" id="cat-electronics" name="category-filter" class="filter-radio">
@@ -60,7 +65,9 @@
         <label for="cat-home" class="cat-btn lbl-home">Home & Living</label>
       </div>
 
-      <div class="row">
+      <div id="no-products-msg" style="display: none; width: 100%; text-align: center; padding: 40px; font-weight: bold; font-size: 18px; color: #d04602;">No products found</div>
+
+      <div class="row" id="productGrid">
 
         <div class="col-12 col-sm-6 col-md-4 col-lg-3" data-category="electronics">
           <article class="product-card">
