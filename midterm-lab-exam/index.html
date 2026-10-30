@@ -45,9 +45,24 @@
  
     <section>
       <h2 class="section-title">Featured Products & Flash Deals</h2>
+
+      <input type="radio" id="cat-all" name="category-filter" class="filter-radio" checked>
+      <input type="radio" id="cat-electronics" name="category-filter" class="filter-radio">
+      <input type="radio" id="cat-mobiles" name="category-filter" class="filter-radio">
+      <input type="radio" id="cat-accessories" name="category-filter" class="filter-radio">
+      <input type="radio" id="cat-home" name="category-filter" class="filter-radio">
+
+      <div class="category-filters">
+        <label for="cat-all" class="cat-btn lbl-all">All</label>
+        <label for="cat-electronics" class="cat-btn lbl-electronics">Electronics</label>
+        <label for="cat-mobiles" class="cat-btn lbl-mobiles">Mobiles</label>
+        <label for="cat-accessories" class="cat-btn lbl-accessories">Accessories</label>
+        <label for="cat-home" class="cat-btn lbl-home">Home & Living</label>
+      </div>
+
       <div class="row">
 
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3" data-category="electronics">
           <article class="product-card">
             <a href="product.html"><img src="images/product-1.png" alt="Wireless ANC Headphones" class="product-img"></a>
             <a href="product.html" class="product-title">Wireless Over-Ear Noise-Cancelling Headphones</a>
@@ -60,7 +75,7 @@
           </article>
         </div>
 
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3" data-category="mobiles">
           <article class="product-card">
             <a href="product.html"><img src="images/product-2.png" alt="Smartphone" class="product-img"></a>
             <a href="product.html" class="product-title">Flagship 5G Smartphone 6.7 AMOLED Display</a>
@@ -73,7 +88,7 @@
           </article>
         </div>
 
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3" data-category="mobiles">
           <article class="product-card">
             <a href="product.html"><img src="images/product-3.png" alt="Smartwatch" class="product-img"></a>
             <a href="product.html" class="product-title">Smart Fitness Watch with Heart Rate & SpO2</a>
@@ -86,7 +101,7 @@
           </article>
         </div>
 
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3" data-category="accessories">
           <article class="product-card">
             <a href="product.html"><img src="images/product-4.png" alt="Wireless Charger" class="product-img"></a>
             <a href="product.html" class="product-title">Fast Qi Wireless Charging Pad 15W Slim</a>
@@ -99,7 +114,7 @@
           </article>
         </div>
 
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3" data-category="home">
           <article class="product-card">
             <a href="product.html"><img src="images/product-5.png" alt="Gaming Chair" class="product-img"></a>
             <a href="product.html" class="product-title">Ergonomic Office & Gaming Chair Lumbar Support</a>
@@ -112,7 +127,7 @@
           </article>
         </div>
 
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3" data-category="accessories">
           <article class="product-card">
             <a href="product.html"><img src="images/product-6.png" alt="Keyboard" class="product-img"></a>
             <a href="product.html" class="product-title">Mechanical RGB Gaming Keyboard Clicky Switches</a>
@@ -125,7 +140,7 @@
           </article>
         </div>
 
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3" data-category="electronics">
           <article class="product-card">
             <a href="product.html"><img src="images/product-7.png" alt="Action Camera" class="product-img"></a>
             <a href="product.html" class="product-title">Ultra HD 4K Action Camera Waterproof 30m</a>
@@ -138,7 +153,7 @@
           </article>
         </div>
 
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3" data-category="home">
           <article class="product-card">
             <a href="product.html"><img src="images/product-8.png" alt="Electric Kettle" class="product-img"></a>
             <a href="product.html" class="product-title">Stainless Steel Electric Kettle 1.8L (1500W)</a>
