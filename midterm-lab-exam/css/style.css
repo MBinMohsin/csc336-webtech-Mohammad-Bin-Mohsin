@@ -314,3 +314,50 @@ body {
     gap: 10px;
   }
 }
+
+.filter-radio {
+  display: none;
+}
+
+.category-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.category-filters .cat-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #ffffff;
+  color: #212121;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.category-filters .cat-btn:hover {
+  border-color: hsl(25, 70%, 45%);
+  color: hsl(25, 70%, 45%);
+}
+
+#cat-all:checked ~ .category-filters .lbl-all,
+#cat-electronics:checked ~ .category-filters .lbl-electronics,
+#cat-mobiles:checked ~ .category-filters .lbl-mobiles,
+#cat-accessories:checked ~ .category-filters .lbl-accessories,
+#cat-home:checked ~ .category-filters .lbl-home {
+  background-color: hsl(25, 70%, 45%);
+  color: #ffffff;
+  border-color: hsl(25, 70%, 45%);
+}
+
+#cat-electronics:checked ~ .row [data-category]:not([data-category="electronics"]),
+#cat-mobiles:checked ~ .row [data-category]:not([data-category="mobiles"]),
+#cat-accessories:checked ~ .row [data-category]:not([data-category="accessories"]),
+#cat-home:checked ~ .row [data-category]:not([data-category="home"]) {
+  display: none !important;
+}
